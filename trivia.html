@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- aos --> 
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+
+<!--  google font --> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+
+    <!--  boostrap --> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+    crossorigin="anonymous">
+
+    
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+    <!--  font-awesome --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    
+
+<title>MARDY GRAS - TRIVIA </title>
+<link rel="shortcut icon" href="./img/icon/mg21.png">
+  </head>
+
+<!--  hader css --> 
+
+<link rel="stylesheet" href="./sass/mardy_grass-hader.css">
+
+<!--  main  css --> 
+<link rel="stylesheet" href="./sass/di_color_mg.css">
+<link rel="stylesheet" href="./sass/trivia.css">
+</head>
+<!-------------------------------  end header ---------------------------------------- --> 
+
+
+
+
+<body>
+    
+    <header >
+    
+        <!--  img-logo hader --> 
+        
+        <div class="container-fluid  haed      ">
+               <div class="row_head    row   d-flex justify-content-lg-around  align-self-end ">
+                 <div class="icon1  col-lg-1      py-md-1 ">
+                 <img  class=" mg  " src="./img/icon/icon12331.png   " alt=" mayor "  >
+         <!--  hamburger --> 
+                    <div id="burger_btn" class=" burger  d-lg-none col-md-2  col-sm-2 col-lg-4  ">
+                             <i  class="fa   fa-bars  fs-1 tx-dsilver text-end " aria-hidden="true"></i>
+                    </div> 
+                </div>
+                    
+                <!--  NAV --> 
+                
+                <div  id="nav_open" class="divnav py-3   col-sm-2  col-md-2  px-lg-3 col-lg-8 col-md-2    d-lg-flex    align-items-center justify-content-lg-around  ">
+                    
+                    <a   class="nav-link bg-pr sh1 rounded-3  border-top dsilver text-center py-2   "  href="./index.html">
+                        HOME
+                    </a>
+                        
+                    <a class="nav-link bg-green  sh3 rounded-3  border-top border-dsilver text-center py-2 "  href="./mardy_about.html">
+                        ABOUT
+                    </a>
+                        
+                    <a class="nav-link bg-pr   sh1 rounded-3  border-top  border-dsilver text-center py-2"  href="./media.html">
+                        MEDIA
+                    </a>
+                        
+                    <a class="nav-link bg-yelow  sh3 rounded-3  border-top  border-dsilver text-center py-2"  href="./questionnaire.html">
+                         FAQ 
+                        </a>
+                        
+                    <a class="nav-link bg-pr   sh1 rounded-3  border-top  border-dsilver text-center py-2"  href="./contact.html">
+                        CONTACT
+                    </a>
+                        
+                    <a class="nav-link bg-green sh3 rounded-3  border-top  border-dsilver text-center  py-2"  href="./trivia.html">
+                        TRIVIA
+                    </a>
+                </div><!--  end nav--> 
+        
+                <!--  img mayor --> 
+                
+                <div class="divicon2 col-lg-1 d-lg-flex  d-md-none    d-sm-none    ">
+                    <div data-aos="zoom-in" data-aos-duration= "3000"  >
+                        <img  class="   py-3   " src="./img/qrcode_weather.com.png " alt="Hourly Weather" width="100px" >
+                        <label class=" text-center  tx-silver fs-6">Hourly Weather</label>
+                    </div><!--  end icon 2--> 
+                </div> 
+            </div> <!--  end  row  head--> 
+        </header> <!--  end    head--> 
+                    
+
+        
+       <main>
+           <div class="div-strip row col-lg-12  m-auto  d-flex align-items-center justify-content-around">
+               <div class="strip bg-silver display-1 text-center text-black-50"> 
+                   
+                   <!-- TRIVIA  QUESTIONS  MARDI  GRAS -->
+                   Trivia Qoestions Mardy-gras
+                </div>
+                <!-- <div class="time row col-lg-1  h2 bg-green">time
+                    <div id="p_time" class="time col-lg-1  h2 bg-green">00</div>
+                </div> -->
+                
+                <div class="score  row col-1   h2  bg-green tx-silver ">score
+                    <div id="score" class="time col-lg-1  h2 bg-green">00</div>
+                </div>
+            </div>
+                
+            <!-- START SECTTION -->
+            <section class=" d-flex align-items-center justify-content-center ">   
+
+               
+                <div class="container  m-0">  
+                    <div class="accordion    ">  
+                        <div x class="accordion_item bg-dsilver rounded-3 mb-2 p-2 tx-silver" id="question_1">    
+     
+                            <!-- START ACORDION_LINK strip card -->
+                    
+                            <a id="div_question"  class="accordion_link  d-flex  tx-silver w-100 text-decoration-none fs-1 bg-green 
+                            align-items-center justify-content-between px-lg-4 " href="#question_1">
+                            Why do you like to work hard?
+                           
+                        </a>
+                        <!-- END ACORDION_LINK -->
+       
+                        <!-- START ALL RADIO   -->
+                        
+
+                    
+                    
+                        <div id="dradio"  class="radio row tx-silver bg-yelow m-0 p-0 ">
+                            <form   action="">
+ 
+                                <!-- START  RADIO + label   -->
+                                <div   class="lb_in1   d-flex px-5 align-items-center justify-content-center">
+                                    <input class="radio " type="radio" name="ch_1" id="ch-1"  value="1">
+                                    <label id="lb2" class="all_label tx-silver px-3" for="ch_1" value="1">It is not clear</label>
+                                </div>
+                                <!-- END RADIO + label  1  -->
+
+                                <!-- START  RADIO + label   -->
+                                <div class="lb_in1   d-flex px-5 align-items-center justify-content-center">
+                                    <input class="radio " type="radio" name="ch_1" id="ch-2" value="2"  value="2">
+                                    <label id="lb3" class="all_label tx-silver px-3" for="ch_1">A stubborn guy</label>
+                                </div>
+                                <!-- END RADIO + label  2  -->
+                                  
+                                <!-- START  RADIO + label   -->
+                                <div class="lb_in1   d-flex px-5 align-items-center justify-content-center">
+                                    <input class="radio " type="radio" name="ch_1" id="ch-3" value="3"  value="3">
+                                    <label id="lb4" class="all_label tx-silver px-3" for="ch_1">Love to challenge</label>
+                                </div>
+                                <!-- END RADIO + label  3  -->
+                                  
+                                <!-- START  RADIO + label   -->
+                                <div class="lb_in1   d-flex px-5 align-items-center justify-content-center">
+                                    <input class="radio " type="radio" name="ch_1" id="ch-1  " value="4">
+                                    <label id="lb5" class="all_label tx-silver px-3" for="ch_1">Learn through your feet</label>
+                                </div>
+                            </form>
+                            <!-- END RADIO + label  4  -->
+                                  
+                        </div>      <!-- END ALL RADIO   -->
+                                  
+                        <div class="btn    col-lg-12 col-md-12 col-sm-12 px-5 d-lg-flex justify-content-lg-around">
+                            <a id="Answer" href="#" class="myButton display-4">Answer</a>
+                            <a id="Start" href="#" class="myButton display-4">Start</a>
+                            <a id="reset" href="#" class="myButton display-4">reset</a>
+                        </div>
+                    </div>     <!-- END ACORDION_ITEM -->
+                </div> <!-- END ACORDION -->
+            </div>       <!-- End CONTENER -->
+        </section>      <!-- END SECTTION -->
+                              
+                                  
+
+                                
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+        <!--  JavaScript aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+               <script>
+         AOS.init();
+        </script>
+        
+        <script src="./js/triva.js"></script>
+        <script src="./js/burger.js"></script>
+        
+        <!--   end JavaScript aos -->
+        
+        </body>
+        
+        </html>
+                                
+            
+
+                          
+
+                                
+                                    
+                                      
+                                      
+                                      
+                                      
+                                    
+
+
+
+
+
+
+
+
+                                    
+
+                                            
+                                            
+
+
+                                    
+
+                                    
+
+                                    
+                            
+
+                                
+                                
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+
+
+        
+
+        
+
+
+
+    
+     
+    
+
+
+
+
+
+
+ 
